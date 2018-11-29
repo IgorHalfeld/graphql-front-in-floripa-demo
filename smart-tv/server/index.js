@@ -1,7 +1,7 @@
-import express from 'express'
-import { createServer } from 'http'
-import { PubSub } from 'apollo-server'
-import { ApolloServer, gql } from 'apollo-server-express'
+const express = require('express')
+const { createServer } = require('http')
+const { PubSub } = require('apollo-server')
+const { ApolloServer, gql } = require('apollo-server-express')
 
 const app = express()
 
@@ -67,6 +67,7 @@ server.applyMiddleware({
 const httpServer = createServer(app)
 server.installSubscriptionHandlers(httpServer)
 
-httpServer.listen({ port: 8000 }, () => {
-  console.log('Apollo Server on http://localhost:8000/graphql')
-})
+httpServer.listen()
+console.log('Apollo Server on http://localhost:8000/graphql')
+
+module.exports = httpServer
