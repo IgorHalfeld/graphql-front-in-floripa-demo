@@ -40,7 +40,8 @@ export default {
   }),
   methods: {
     loadCameraIds (device) {
-      this.deviceId = device[0].deviceId
+      window.alert(JSON.stringify(device, null, 2))
+      this.deviceId = device[1] ? device[1].deviceId : device[0].deviceId
     },
     logErrors (error) {
       console.log('Error', error)

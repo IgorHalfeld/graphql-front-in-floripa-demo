@@ -67,7 +67,7 @@ server.applyMiddleware({
 const httpServer = createServer(app)
 server.installSubscriptionHandlers(httpServer)
 
-httpServer.listen()
+httpServer.listen({ port: process.env.PORT || 80 })
 console.log('Apollo Server on http://localhost:8000/graphql')
 
 module.exports = httpServer
