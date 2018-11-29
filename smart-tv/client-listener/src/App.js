@@ -39,11 +39,13 @@ class App extends PureComponent {
           if (!this.state.images.length) return (
             <div
               style={{
-                justifyContent: !this.state.images.length ? 'center' : 'flex-start',
-                alignItems: !this.state.images.length ? 'center' : 'flex-start'
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center'
               }}
               className="container">
-              <h1 className="container-title">Imagens irão aparecer aqui...</h1>
+              <span role="img" aria-label="emoji" className="container-title">😘</span>
+              <h2 className="container-subtitle">Imagens irão <br /> aparecer aqui...</h2>
             </div>
           )
           return (
