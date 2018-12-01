@@ -3,7 +3,7 @@
     <a href="http://frontinfloripa.com.br/">Front in Floripa</a>
   </h2>
   <h3 align="center">
-    <a href="https://speakerdeck.com/igorhalfeld/nativescript-vue">Slides</a>
+    <a href="https://speakerdeck.com/igorhalfeld/graphql-front-queries-made-easy">Slides</a>
   </h3>
   <p align="center">
     <img src="./demo.gif" alt="screenshot" />
