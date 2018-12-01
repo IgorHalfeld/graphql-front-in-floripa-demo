@@ -6,7 +6,7 @@
     <a href="https://speakerdeck.com/igorhalfeld/nativescript-vue">Slides</a>
   </h3>
   <p align="center">
-    <img width="500" src="./demo.gif" alt="screenshot" />
+    <img src="./demo.gif" alt="screenshot" />
   </p>
 </p>
 
